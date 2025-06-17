@@ -2,11 +2,11 @@ const mysql = require('mysql2');
 require('dotenv').config();
 
 const connection = mysql.createConnection({
-    host: process.env.DB_HOST || 'localhost',
-    port: process.env.DB_PORT || '3306',
-    user: process.env.DB_USER || 'root',
-    password: process.env.DB_PASSWORD || 'root',
-    database: process.env.DB_NAME || 'personal_tracker_system' 
+    host: process.env.DB_HOST || 'mysql-b52392c-ritup665-4065.e.aivencloud.com',
+    port: process.env.DB_PORT || '26451',
+    user: process.env.DB_USER || 'avnadmin',
+    password: process.env.DB_PASSWORD || 'AVNS_F4p9X1rqcgQ3WE0KjKW',
+    database: process.env.DB_NAME || 'defaultdb' 
 });
 
 connection.connect((err)=>{
